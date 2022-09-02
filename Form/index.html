@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Prueba" content="Esta pagina representa una prueba">
+    <title>Lo aprendido</title>
+  </head>
+  <body>
+    <main>
+      <h1>Bienvenido</h1>
+      <h3>A continuación llene estos datos...</h3>
+      <br> <hr>
+<form action="index.html" enctype="text/plain" method="post" autocomplete="on" required>
+  <fieldset>
+    <legend>ENTREVISTA</legend>
+    <label for="nombre">
+      <span>Nombre</span>
+      <input type="text" name="nombre" placeholder="Nombre..." required>
+    </label>
+    <label for="apellido">
+      <span>Apellido</span>
+      <input type="text" name="apellido" placeholder="Apellido..." required>
+    </label>
+   <br><br>
+   <label for="documento">
+     <span>DNI</span>
+     <input type="number" name="documento" maxlength="8" required autocomplete="off">
+   </label>
+   <label for="email">
+     <span>Correo electrónico</span>
+     <input type="email" name="email" placeholder="@hotmail.com">
+   </label><br><br>
+   <fieldset>
+   <label for="sexo">
+    <span>Sexo</span><br>
+   <input type="radio" name="sexo" value="masculino">Masculino<br>
+   <input type="radio" name="sexo" value="femenino">Femenino<br>
+   <input type="radio" name="sexo" value="no especificar" checked>No especificar/No sé
+ </label>
+ </fieldset><br><br>
+ <label for="dia">
+   <span>Fecha de nacimiento</span><br>
+   <span>Dia</span>
+   <input type="text" maxlength="2" size="2" name="dia" placeholder="...">
+ </label>
+ <label for="mes">
+   <span>Mes</span>
+   <select name="">
+     <option value="selecciona" selected="-selecciona">-Selecciona</option>
+     <option value="enero">Enero</option>
+     <option value="febrero">Febrero</option>
+     <option value="marzo">Marzo</option>
+     <option value="abril">Abril</option>
+     <option value="mayo">Mayo</option>
+     <option value="junio">Junio</option>
+     <option value="julio">Julio</option>
+     <option value="agosto">Agosto</option>
+     <option value="septiembre">Septiembre</option>
+     <option value="octubre">Octubre</option>
+     <option value="noviembre">Noviembre</option>
+     <option value="diciembre">Diciembre</option>
+   </select>
+ </label>
+ <label for="año">
+   <span>Año</span>
+   <input type="text" maxlength="4" name="año" required size="2" placeholder="...">
+ </label><br><br>
+ <label for="inicio">
+ <span>Inicio de estudios</span>
+<input type="date" name="inicio" value="Inicio" required>
+</label>
+<label for="final">
+  <span>Finales de estudio</span>
+  <input type="date" name="final" required>
+</label><br><br><br>
+<label for="gustos">
+<span>Cuales puestos te interesarian? (Maximo 3)</span>
+<br><select name="puestos" multiple="multiple" size="5">
+<optgroup label="Administracion">
+<option value="">Recursos Humanos</option>
+<option value="">Gerente</option>
+<option value="">Supervisor</option>
+<option value="">Postulante a Jefe</option>
+</optgroup>
+<optgroup label="Mercado">
+<option value="">Cajero</option>
+<option value="">Repositor</option>
+<option value="">Atencion al publico</option>
+<option value="">Armador</option>
+<option value="">Seguridad</option>
+<option value="">Cadete</option>
+<option value="">Verduleria</option>
+</optgroup>
+<optgroup label="Mantenimiento">
+<option value="">Tecnico electricista</option>
+<option value="">Limpieza</option>
+<option value="">Ingenieria</option>
+</optgroup>
+</select><br><br>
+</label>
+<label for="descripcion">
+<span>Describe detalladamente en qué podrías beneficiar a la empresa</span><br><br>
+<textarea name="descripcion" rows="8" cols="50"></textarea></label><br>
+<label for="cv"><br>
+  <span>Enviar CV (opcional)</span><br>
+<input type="file" name="cv">
+</label><br><br>
+<label for="check">
+<input type="checkbox" checked name="check" value="">
+<span>Acepto los términos y condiciones de privacidad de datos</span>
+</label><br>
+<label for="suscripcion">
+  <input type="checkbox" name="suscripcion" value="">
+  <span>Deseo recibir nuevos avisos a puestos disponibles de ser necesario</span>
+</label>
+
+   <br><br><input type="submit" method="post" name="enviar" value="Enviar">
+   <input type="reset" method="post" name="enviar" value="Reiniciar">
+
+  </fieldset>
+
+</form>
+
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hide ul{
+    margin-left:20px;
+}
+
+.hide li{
+    margin-top: 5px;
+}
+
+.hide{margin-left: 10px;}
+
+
+body{max-width: 600px;
+margin: 0 auto;}
+
+
+.container{ width: 600px;
+    height: 500px;
+    background-color: rgba(7, 83, 77, 0.144);
+margin-top: 50px;}
+
+.contacto{
+    float: right;
+}
